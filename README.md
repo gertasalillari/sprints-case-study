@@ -37,19 +37,11 @@ The script also generates additional insights (see below for output location):
 
 ## Getting Started
 
-1. Copy the sample environment file.
-```
-cp sample.env ./app/.env
-```
-
-2. Build image and up the server:
+Build image and up the server:
 ```bash
 docker compose up --build
 ```
-... which runs the scripts with Python from the entrypoint, posting to the output data to the `/annual-data endpoint.`
-```bash
-python yearly_data.py 
-```
+... which runs the scripts with Python from the entrypoint (`python yearly_data.py `), posting to the output data to the `/annual-data endpoint.`
 
 The script uses a logger (`app/logs/logger_config.py`) to track progress and errors. Log messages include:
 - Data fetching status

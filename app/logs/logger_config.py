@@ -3,7 +3,7 @@ import os
 
 from loguru import logger
 
-LOGS_DIR = os.getenv("LOGS_DIR")
+LOGS_DIR = "/app/outputs/logs/"
 log_format = "{time:YYYY-MM-DD HH:mm:ss} | {level} | {file}:{line} | {message}"
 
 # Create the directory if it doesn't exist
